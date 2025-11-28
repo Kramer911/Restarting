@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; not sure what it does */
+ }
+
+/* body {
+    display: grid;
+} */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* makes the text go on top and bottom of image*/
+    text-align: center;
+    width: 100%;
+    gap: 30px;
+    padding: 20px 0 20px 0;
+    background-color: teal;
+}
+
+header h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 5px 5px grey;
+}
+
+header img {
+    border-radius: 20%;
+    width: 300px;
+    padding: 0 50px 0 50px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+
+/*===================    NAV   ========================*/
+
+nav {
+    background-color: #DCA624;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.navbar li {
+    list-style: none; 
+}
+
+.navbar a {    
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 40 0 40 0;
+    color: black;    
+}
+
+.navbar .active a {
+    text-decoration: underline;
+    color: teal;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+
+
+
+
+/* ====================   HOME  ========================== */
+
+
+.summary {
+    color: navy;
+    background-color: #DCA624;
+}
+.summary h1 {
+    font-size: 45px;
+    font-weight: bold;
+    padding: 150px 40px 70px 40px;
+}    
+
+.summary h2 {
+    font-size: 35px;
+    padding: 0 20px 150px 40px;
+}
+
+.container {  /*text and images side by side */
+    display: flex;
+    align-items: center;     
+    justify-content: space-between;
+}
+
+.container img {
+    width: 100%;
+}
+
+.text h3 {   
+    flex-wrap: wrap;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 100px 200px 40px 40px;
+    color: navy;
+}
+
+.fourstreams {
+    display: flex;
+    font-size: 22px;  
+    font-weight: bold; 
+    padding: 0 0 200px 80px;
+    color: navy;
+}
+
+
+
+/* ==================    RESOURCES   ================== */
+
+.categories {
+    padding-left: 300px;
+    padding-bottom: 100px;
+}
+
+.categories p {
+    font-size: 30px;
+}
+
+.categories h3 {
+    font-size: 20px;
+}
+
+.categories ul li {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/* ===================  PROGRAMS    ==================== */
+
+
+.programs h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 100px 200px 100px 200px;
+    color: navy;
+}
+
+.programs h2{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    font-size: 100px;
+    padding: 100px 400px;
+}
+
+.programs p{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 200px 100px 20px;
+    color: navy;
+}
+
+.programs img{
+    width: 700px;
+    height: auto;
+    padding: 0 0 100px 100px;
+}
+
+
+/* ===================    NEWS   ==================*/
+
+.news {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 150px 150px 150px 150px;
+    color: navy;
+}
+
+/* ===================  SUMMER CAMP   ===================*/
+
+.summer p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 200px 0 200px 0;
+}
+
+
+/* ===================  DONATIONS   ===================*/
+
+.donations h1 {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 150px 40px 70px 100px;
+    color:black;
+}
+
+.donations h2 {    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 100px 400px 100px 40px;
+    color: navy;
+}
+
+
+
+/* ===================   HISTORY    ==================  */
+
+.history p {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 150px;
+    color: navy;
+}
+
+/*=====================     JOBS     =======================*/
+
+.jobs {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 150px 150px 150px 150px;
+}
+
+.jobs .title h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+
+.apply p {
+    font-size: 25px;
+    padding-top: 60px;
+    color: navy;
+}
+
+
+
+
+/*=====================     FOOTER     =======================*/
+
+footer {
+        position: fixed;
+        text-align: center;
+        padding: 15px 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #DCA624;
+        color: black;
+        font-size: 10px;
+        }
+
+        
+
+/* ==================   RESPONSIVE NAVBAR   ===================== */
+
+       
+     
+        @media (max-width: 600px) {
+            body {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            } 
+        }
+
+        @media (max-width: 600px) {
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }            
+        } 
+
+        @media (max-width: 600px) {
+            .content-wrapper p {
+                flex-direction: column;
+                text-align: center;
+                padding: 50px;
+            } 
+        }
+       
+       
